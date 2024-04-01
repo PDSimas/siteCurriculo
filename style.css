@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  font-family: Fira Sans;
+  color: #A27B5C ;
+  text-decoration: none;
+  list-style: none;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+/* cabeçalho */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.menu{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu a{
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: 10px 20px;
+}
+
+/* parte principal */
+.intro{
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap:100px;
+  align-items: center;
+}
+.intro h1{
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+.intro h1::before{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(img/detalhe.svg)no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+.intro p{
+  font-size: 1.5rem;
+  color: #525252;
+}
+/* experiencia */
+.experiencia{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.subtitle{
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+.experiencia .subtitle{
+  color: #DCD7C9;
+}
+.experienciaText {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+.empresa{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+  gap: 10px 20px;
+}
+.empresaYear{
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  color: #525252;
+  font-size: 0.875rem;
+  text-align: right;
+  width: 80px;
+}
+.empresaTitle{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+.empresaText{
+  font-size:0.875rem ;
+  line-height: 1.4;
+  color: #525252;
+}
+.empresaSkills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+.empresaSkills li{
+  font-size:0.875rem ;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 5px 10px;
+
+}
+
+/* formação */
+.formacao{
+  background: #2C3639 ;
+  color: #ffffff;
+}
+.formacaoContainer{
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.formacao .subtitle{
+  color: #1f2525;
+  max-width: 5ch;
+}
+.textForm {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #DCD7C9;
+}
+.textForm strong{
+  color: #A27B5C;
+}
+.faculdadeList{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.faculdade{
+  flex: 1;
+  background: #3F4E4F;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.faculdadeType{
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: #DCD7C9;
+  margin-bottom: 10px;
+}
+.faculdadeCourse{
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  color: #A27B5C;
+  flex: 1;
+}
+.faculdadePlace{
+  font-size: 1.125rem;
+  color: #DCD7C9;
+}
+.course{
+  margin-bottom: 60px;
+}
+.formExtra h3{
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.formExtra h3::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left:-36px;
+  top:-4px;
+}
+.course h3::before{
+  background: url(img/cursos.svg) no-repeat center center;
+}
+.languages h3::before{
+  background: url(img/idiomas.svg) no-repeat center center;
+}
+.formExtra li{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #DCD7C9;
+}
+.formExtra span{
+  color: #8f8f8f;
+}
+.course li{
+  display: flex;
+  justify-content: space-between;
+}
+/* footer */
+.footer{
+  background: #283131;
+}
+.footerContainer{
+max-width: 1200px;
+padding: 120px 20px 60px 20px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 100px;
+align-items: center;
+}
+.footerText{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #DCD7C9;
+}
+.footerContact li{
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #DCD7C9;
+  margin-bottom: 30px;
+}
+.footerCopy{
+  grid-column: 1/-1;
+  font-size: 1.125rem;
+  color: #A27B5C;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* responsividade */
+@media (max-width:800px){
+  /* cabecalho */
+  .header{
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a{
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+  /* parte principal */
+  .intro{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .intro h1{
+    font-size: 2.3rem;
+  }
+  .intro h1::before{
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+  /* experiencia */
+  .experiencia{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitle{
+    color: #A27B5C ;
+  }
+  .subtitle{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+  .experienciaText{
+    font-size: 1.25rem;
+  }
+  .empresaYear{
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+/* formação */
+.formacaoContainer{
+  grid-template-columns: 1fr;
+  padding: 60px 20px;
+  gap: 40px;
+}
+.formacao .subtitle{
+  color: #ffffff;
+}
+.formacaoText{
+font-size: 1.25rem;
+}
+.formExtra h3::before{
+  position: initial;
+  margin-bottom: 10px;
+}
+/* footer */
+.footerContainer{
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.footerContact li {
+  font-size: 1.5rem;
+
+}
+
+
+
+
+}
+@media (max-width:400px){
+  .intro{
+    grid-template-columns: 1fr;
+  }
+  .intro img{
+    display: none;
+  }
+  .empresa{
+    grid-template-columns: 1fr;
+  }
+}
