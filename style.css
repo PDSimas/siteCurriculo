@@ -235,6 +235,78 @@ img{
   display: flex;
   justify-content: space-between;
 }
+
+/* skills/hobbies */
+.icon{
+  height: 28px;
+  width: 28px;
+}
+.skillContainer{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.skills{
+  background: #f5f5f5;
+}
+.skillTitle{
+  text-align: center;
+  color: #A27B5C;
+  margin-bottom: 20px;
+  font-size: 45px;
+  line-height: 1.4;
+}
+
+.skillColumn{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 10px;
+}
+.skillColumn li{
+  width: 170px;
+  height: 160px;
+  padding: 16px;
+  margin: auto;
+  gap: 8px;
+  background: #3F4E4F;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+
+.hobbieTitle{
+text-align: center;
+  color: #A27B5C;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 45px;
+  line-height: 1.4;
+}
+.skillLabel,.hobbieLabel{
+  color: #DCD7C9;
+}
+.hobbieColumn{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 10px;
+  
+}
+.hobbieColumn li{
+  width: 170px;
+  height: 160px;
+  padding: 16px;
+  margin: auto;
+  gap: 8px;
+  background: #3F4E4F;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+
 /* footer */
 .footer{
   background: #283131;
