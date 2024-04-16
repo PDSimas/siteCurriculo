@@ -7,6 +7,7 @@
   color: #A27B5C ;
   text-decoration: none;
   list-style: none;
+  padding: 0;
 }
 img{
   max-width: 100%;
@@ -15,7 +16,7 @@ img{
 /* cabeçalho */
 .header{
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   padding: 40px 20px;
   max-width: 1200px;
@@ -57,7 +58,7 @@ img{
   display: block;
   width: 130px;
   height: 100px;
-  background: url(img/detalhe.svg)no-repeat center;
+  background: url(img/icons/detalhe.svg)no-repeat center;
   position: absolute;
   top: -15px;
   left: -40px;
@@ -217,10 +218,10 @@ img{
   top:-4px;
 }
 .course h3::before{
-  background: url(img/cursos.svg) no-repeat center center;
+  background: url(img/icons/cursos.svg) no-repeat center center;
 }
 .languages h3::before{
-  background: url(img/idiomas.svg) no-repeat center center;
+  background: url(img/icons/idiomas.svg) no-repeat center center;
 }
 .formExtra li{
   font-size: 1.125rem;
@@ -306,6 +307,114 @@ text-align: center;
   align-items: start;
   justify-content: end;
 }
+
+/* Portifolio */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  background: #2C3639;
+}
+
+.portfolio h2 {
+  font-size: 56px;
+  color: #A27B5C;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.portfolio-card {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.portfolio-card img {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+}
+
+.portfolio-card .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  height: 30vw;
+  width: 30vw;
+  background-color: #34353ba2;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.portfolio-card .overlay h3 {
+  color: #fbfbfb;
+  font-size: 24px;
+}
+
+.portfolio-card .overlay p {
+  color: #fbfbfb;
+  font-size: 16px;
+  text-align: center;
+}
+
+.portfolio-card .overlay button {
+  height: 36px;
+  width: 108px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.portfolio-card .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio button {
+  margin-top: 50px;
+  height: 48px;
+  width: 144px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.portfolio button:hover {
+  background-color: #cc9e4e;
+}
+
 
 /* footer */
 .footer{
@@ -406,6 +515,11 @@ font-size: 1.25rem;
   position: initial;
   margin-bottom: 10px;
 }
+/* portifolio */
+.titlePort,.subPort{
+  display: none;
+}
+
 /* footer */
 .footerContainer{
   grid-template-columns: 1fr;
@@ -415,12 +529,25 @@ font-size: 1.25rem;
   font-size: 1.5rem;
 
 }
+.hobbieTitle,.skillTitle{
+  font-size: 3rem;
+  display: flex;
+  align-items: start;
+}
 
 
 
 
 }
 @media (max-width:400px){
+  .hobbieTitle,.skillTitle{
+    font-size: 3rem;
+    display: flex;
+    align-items: start;
+  }
+  .portfolio h2{
+    font-size: 3rem;
+  }
   .intro{
     grid-template-columns: 1fr;
   }
