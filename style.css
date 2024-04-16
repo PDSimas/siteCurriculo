@@ -318,6 +318,9 @@ text-align: center;
   background: #2C3639;
 }
 
+.btn{
+  padding: 15px 20px;
+}
 .portfolio h2 {
   font-size: 56px;
   color: #A27B5C;
